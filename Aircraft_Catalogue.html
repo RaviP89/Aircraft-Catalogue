@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aircraft Catalogue</title>
+</head>
+<body>
+    <script>
+        class Aircraft {
+            constructor(manufacturer, model, firstFlight) {
+                this.manufacturer = manufacturer;
+                this.model = model;
+                this.firstFlight = firstFlight;
+            }
+            
+            showInfo() {
+                console.log(`Manufacturer: ${this.manufacturer}, Model: ${this.model}, First flight: ${this.firstFlight}`);
+            }
+        }
+        
+        const myAircraft = new Aircraft("McDonnell Douglas", "Skyhawk A4", 1954);
+    
+        myAircraft.showInfo();
+    </script>
+</body>
+</html>
